@@ -1,12 +1,12 @@
 import {createStackNavigator} from 'react-navigation';
-import HelloWorld from './components/HelloWorld';
+import ShowPage from './components/ShowPage';
 
 const App = createStackNavigator(
   {
-    HelloWorld: {screen: HelloWorld}
+    ShowPage: {screen: ShowPage}
   },
   {
-    initialRouteName: 'HelloWorld',
+    initialRouteName: 'ShowPage',
     headerMode: 'none'
   }
 );
