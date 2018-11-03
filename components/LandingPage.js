@@ -6,9 +6,9 @@ export default class LandingPage extends Component {
     return (
      <ScrollView> 
         <Text style= {styles.bigblack}> A-Z</Text>
-        <Text style= {styles.bigblack}> The Good Place </Text>
-        <Text> Option2</Text>
-        <Text> Option3</Text>
+        <Text style= {styles.options}> Friends </Text>
+        <Text style= {styles.options}> The Office</Text>
+        <Text style= {styles.options}> Walking Dead</Text>
       </ScrollView>
     );
   }
@@ -18,13 +18,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     alignItems: 'flex-start',
     justifyContent: 'space-evenly',
   },
   bigblack: {
-    color: 'white',
-    backgroundColor: 'black',
+    color: 'black',
+    backgroundColor: 'white',
     fontWeight: 'bold',
     fontSize: 35,
   },

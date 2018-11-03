@@ -5,7 +5,7 @@ export default class ShowPage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>SHOW PAGE NOW</Text>
+        <Text>Show Page</Text>
       </View>
     );
   }

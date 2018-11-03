@@ -13,7 +13,7 @@ const App = createStackNavigator(
     initialRouteName: 'LandingPage',
     navigationOptions: {
       headerStyle: {
-        backgroundColor: '#f4511e',
+        backgroundColor: 'black',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
