@@ -1,1 +1,0 @@
-Assets: images for the app
