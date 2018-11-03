@@ -1,18 +1,26 @@
 import {createStackNavigator} from 'react-navigation';
 import ShowPage from './components/ShowPage';
 import LandingPage from './components/LandingPage';
-import Profile from './components/Profile';
+import ProfilePage from './components/ProfilePage';
 
 const App = createStackNavigator(
   {
     ShowPage: {screen: ShowPage},
     LandingPage: {screen: LandingPage},
-    Profile: {screen: Profile}
+    ProfilePage: {screen: ProfilePage}
   },
   {
     initialRouteName: 'LandingPage',
-    headerMode: 'none'
-  }
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#f4511e',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  },
 );
 
 export default App;
