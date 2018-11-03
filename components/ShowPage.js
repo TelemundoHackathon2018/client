@@ -5,7 +5,7 @@ export default class ShowPage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>SHOW PAGE</Text>
+        <Text>SHOW PAGE NOW</Text>
       </View>
     );
   }
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
