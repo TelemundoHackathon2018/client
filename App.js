@@ -1,14 +1,35 @@
-import {createStackNavigator} from 'react-navigation';
-import ShowPage from './components/ShowPage';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+import HomeScreen from './components/HomeScreen';
+import ShowScreen from './components/ShowScreen';
+import ProfileScreen from './components/ProfileScreen';
+import GameScreen from './components/GameScreen';
 
-const App = createStackNavigator(
+const RootStack = createStackNavigator(
   {
-    ShowPage: {screen: ShowPage}
+    Home: HomeScreen,
+    Show: ShowScreen,
+    Profile: ProfileScreen,
+    Game: GameScreen,
   },
   {
-    initialRouteName: 'ShowPage',
-    headerMode: 'none'
-  }
+    initialRouteName: 'Home',
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: 'navy',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  },
 );
 
-export default App;
+
+export default class App extends React.Component {
+  render() {
+    return <RootStack />;
+  }
+}

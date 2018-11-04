@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "client",
+    "name": "NBSeeTest",
     "description": "This project is really great.",
-    "slug": "client",
+    "slug": "NBSeeTest",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
