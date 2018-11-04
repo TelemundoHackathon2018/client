@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import {View, Image, ScrollView, StyleSheet, Dimensions} from 'react-native';
+import {View, Image, ScrollView, StyleSheet, Dimensions, WebView} from 'react-native';
 import {Button, Avatar, Text, SocialIcon, Badge, CheckBox} from 'react-native-elements';
-import { Video } from 'expo';
+// import Video from 'react-native-video';
+import { Asset, Video } from 'expo';
 
+
+// const file = {{ uri: "https://embed.wirewax.com/8117523/" }};
+// const videoAsset = Asset.fromModule(file);
+// console.log(file);
 class GameScreen extends Component {
   // static navigationOptions = {
   //   title: 'Trivia',
   // };
-  renderVideo () {
-    const { width } = Dimensions.get('window');
-      return(
-        <Video
-          source={{ uri: 'https://embed.wirewax.com/8011338/' }}
-          shouldPlay
-          resizeMode="cover"
-          style={{ width, height: 300 }}
+  // renderVideo () {
+  //   const { width } = Dimensions.get('window');
+  //     return(
+  //       <WebView
+  //         source={{ uri: "https://embed.wirewax.com/8117523/" }}
+  //         // shouldPlay
+  //         // resizeMode="cover"
+  //         // style={{ width, height: 300 }}
 
-        />
-      )
-  }
+  //       />
+  //     )
+  // }
   render() {
     return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'space-between'}}>
-        {this.renderVideo()}
+      <View style={{ height: 350}}>
+        <WebView
+          source = {{ uri: "https://embed.wirewax.com/8117523/" }}
+          />
       </View>
     );
   }
