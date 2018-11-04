@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
     height: 60,
   },
 });
-export default Header;
+export default HeaderBar;
