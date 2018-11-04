@@ -24,8 +24,9 @@ export default class App extends React.Component{
 }
 
   const AppDrawerNavigator = DrawerNavigator({
-    LandingPage: {screen: LandingPage},
+    ProfilePage: {screen: ProfilePage},
     ShowPage: {screen: ShowPage},
+    LandingPage: {screen: LandingPage},
     ProfilePage: {screen: ProfilePage}
   })
 

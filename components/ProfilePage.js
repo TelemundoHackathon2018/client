@@ -3,7 +3,7 @@ import { Button, View, Text, Image } from 'react-native';
 
 export default class ProfilePage extends Component {
   static navigationOptions = {
-    title: 'NBSee',
+    title: 'NBC Trivia',
   };
   render() {
     return (

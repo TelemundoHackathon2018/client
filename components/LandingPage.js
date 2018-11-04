@@ -5,32 +5,22 @@ export default class LandingPage extends Component {
   render() {
     return (
      <ScrollView> 
-        <Text style= {styles.bigblack}> A-Z</Text>
-        <Text style= {styles.options}> Friends </Text>
-        <Text style= {styles.options}> The Office</Text>
-        <Text style= {styles.options}> Walking Dead</Text>
+        <Image style={styles.bigblack} source={{uri: "https://github.com/TelemundoHackathon2018/client/blob/master/nbctriv.png?raw=true", width: 250, height: 60}} />
       </ScrollView>
     );
   }
 }
   
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: 'white',
-    alignItems: 'flex-start',
-    justifyContent: 'space-evenly',
-  },
   bigblack: {
     color: 'black',
-    backgroundColor: 'white',
+    backgroundColor: 'navy',
     fontWeight: 'bold',
     fontSize: 35,
   },
   options: {
     color: 'white',
-    backgroundColor: 'black',
+    backgroundColor: 'navy',
     fontWeight: 'bold',
     fontSize: 25,
   }
