@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, View, Text, Image } from 'react-native';
+import HeaderBar from "./HeaderBar";
 
 export default class ProfilePage extends Component {
   static navigationOptions = {
@@ -7,7 +8,9 @@ export default class ProfilePage extends Component {
   };
   render() {
     return (
+    
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'top' }}>
+        <HeaderBar />
         <Text>Profile</Text>
         <Image
           style={{width: 100, height: 100}}

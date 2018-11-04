@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, ScrollView, AppRegistry, Image } from 'react-native';
+import {StyleSheet, Text, ScrollView, AppRegistry, Image, View } from 'react-native';
+import HeaderBar from "./HeaderBar";
 
 export default class LandingPage extends Component {
   render() {
     return (
-     <ScrollView> 
-        <Image style={styles.bigblack} source={{uri: "https://github.com/TelemundoHackathon2018/client/blob/master/nbctriv.png?raw=true", width: 250, height: 60}} />
-      </ScrollView>
+      <View>
+        <HeaderBar />
+      </View>
     );
   }
 }
